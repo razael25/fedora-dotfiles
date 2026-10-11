@@ -27,7 +27,7 @@ export_dotfiles() {
   while IFS= read -r -d '' f; do
     rel="${f#$DOTFILES_DIR/}"
     link_or_copy "$f" "$HOME/$rel"
-  done < <(find "$DOTFILES_DIR" -type f \
+  done < <(find "$DOTFILES_DIR" \( -type f -o -type l \) \
     -not -path "$DOTFILES_DIR/.git/*" \
     -not -name "README.md" -not -name "install.sh" -not -name ".gitignore" -print0)
 }
