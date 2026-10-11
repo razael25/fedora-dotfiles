@@ -1,0 +1,8 @@
+#!/bin/sh
+# Single-instance launcher untuk autotiling (dipakai via exec_always).
+# Pola "bin/autotiling$" hanya cocok dengan proses python target, TIDAK cocok
+# dengan shell peluncur ini (cmdline-nya ".../autotiling-once") maupun pkill itu
+# sendiri, jadi tidak ada self-kill race.
+pkill -f "bin/autotiling$"
+sleep 0.5
+exec $HOME/.local/bin/autotiling

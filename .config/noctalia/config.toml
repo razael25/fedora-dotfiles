@@ -1,0 +1,13 @@
+# Kurasi manual: hanya bar + tema.
+# Lockscreen & wallpaper diatur via GUI Noctalia (settings.toml menang).
+[theme]
+builtin = "Gruvbox"
+
+[bar.default]
+margin_ends = 0
+margin_edge = 0
+radius_top_left = 0
+radius_top_right = 0
+radius_bottom_left = 12
+radius_bottom_right = 12
+end = ["media", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "control-center", "session"]

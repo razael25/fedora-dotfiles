@@ -1,0 +1,9 @@
+*.bak-*
+*.zwc
+*zcompdump*
+.bash_history
+.zsh_history
+.cache/
+.mozilla/
+*__pycache__/
+.dotfiles.bak-*/

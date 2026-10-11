@@ -1,0 +1,7 @@
+[Default Applications]
+x-scheme-handler/tg=userapp-AyuGram Desktop-AJTEW3.desktop
+x-scheme-handler/tonsite=userapp-AyuGram Desktop-80JEW3.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-AyuGram Desktop-AJTEW3.desktop;
+x-scheme-handler/tonsite=userapp-AyuGram Desktop-80JEW3.desktop;
